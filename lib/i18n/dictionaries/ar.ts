@@ -204,6 +204,6 @@ const dictionary = {
     infoHeading: "معلومات التواصل",
     officeHeading: "المكتب الرئيسي",
   },
-} as const;
+};
 
 export default dictionary;
