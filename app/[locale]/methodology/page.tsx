@@ -57,6 +57,18 @@ export default async function MethodologyPage({
       <section className="border-y border-navy-100 bg-navy-50">
         <div className="mx-auto max-w-4xl px-6 py-16">
           <div className="grid gap-6 sm:grid-cols-2">
+            <div id="valuation" className="scroll-mt-24 rounded-xl border border-navy-100 bg-white p-6">
+              <h2 className="text-lg font-bold text-navy-900">{methodology.valuationHeading}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-navy-800/70">
+                {methodology.valuationBody}
+              </p>
+            </div>
+            <div id="research" className="scroll-mt-24 rounded-xl border border-navy-100 bg-white p-6">
+              <h2 className="text-lg font-bold text-navy-900">{methodology.researchHeading}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-navy-800/70">
+                {methodology.researchBody}
+              </p>
+            </div>
             <div id="consulting" className="scroll-mt-24 rounded-xl border border-navy-100 bg-white p-6">
               <h2 className="text-lg font-bold text-navy-900">{methodology.consultingHeading}</h2>
               <p className="mt-2 text-sm leading-relaxed text-navy-800/70">

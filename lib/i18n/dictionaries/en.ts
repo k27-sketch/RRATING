@@ -41,6 +41,8 @@ const dictionary = {
     quickLinksHeading: "Quick Links",
     quickLinks: {
       creditRatings: "Credit Ratings",
+      valuation: "Business Valuation",
+      research: "Research",
       ratingDisclosure: "Rating Disclosure",
       searchRating: "Search a Rating",
       ratingDefinitions: "Rating Definitions",
@@ -137,6 +139,12 @@ const dictionary = {
       { title: "Issue Rating", text: "An opinion on a specific debt instrument, considering its structure and seniority." },
       { title: "National Scale Rating", text: "Ratings relative to the lowest credit risk within the domestic market." },
     ],
+    valuationHeading: "Business Valuation",
+    valuationBody:
+      "Independent valuation services for energy & infrastructure, real estate, and corporate finance, supporting investment and financing decisions (placeholder copy).",
+    researchHeading: "Research",
+    researchBody:
+      "Sector studies, credit outlooks, and thematic research that give investors and issuers context beyond individual ratings (placeholder copy).",
     consultingHeading: "Consulting",
     consultingBody:
       "Advisory support on credit risk assessment, capital structure, and rating readiness for issuers preparing to enter the market (placeholder copy).",
