@@ -23,7 +23,7 @@ export default function QuickLinks({
 
   const items = [
     { icon: BarChart3, label: quickLinks.creditRatings, href: `${base}/methodology` },
-    { icon: TrendingUp, label: quickLinks.publishedRatings, href: `${base}/ratings` },
+    { icon: TrendingUp, label: dict.home.heroCta, href: `${base}/ratings` },
     { icon: Calculator, label: quickLinks.valuation, href: `${base}/methodology#valuation` },
     { icon: BookOpen, label: quickLinks.research, href: `${base}/methodology#research` },
     { icon: Briefcase, label: quickLinks.consulting, href: `${base}/methodology#consulting` },

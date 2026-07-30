@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import type { Dictionary } from "@/lib/i18n/get-dictionary";
+import FinanceChartBg from "./finance-chart-bg";
 
 export default function HeroCarousel({
   locale,
@@ -20,14 +21,14 @@ export default function HeroCarousel({
       eyebrow: home.heroEyebrow,
       title: home.heroTitle,
       subtitle: home.heroSubtitle,
-      cta: { label: home.heroCta, href: `${base}/reports` },
+      cta: { label: home.heroCta, href: `${base}/ratings` },
       secondaryCta: { label: home.heroSecondaryCta, href: `${base}/about` },
     },
     {
       eyebrow: home.heroSlide2Eyebrow,
       title: home.heroSlide2Title,
       subtitle: home.heroSlide2Subtitle,
-      cta: { label: home.heroCta, href: `${base}/methodology` },
+      cta: { label: home.heroCta, href: `${base}/ratings` },
       secondaryCta: { label: home.heroSecondaryCta, href: `${base}/about` },
     },
   ];
@@ -45,14 +46,18 @@ export default function HeroCarousel({
 
   return (
     <section className="relative overflow-hidden bg-navy-950 text-white">
-      <Image
-        src="/hero-kafd-day.jpg"
-        alt=""
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover"
-      />
+      {active === 0 ? (
+        <Image
+          src="/hero-kafd-day.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      ) : (
+        <FinanceChartBg />
+      )}
       <div
         aria-hidden
         className="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/75 to-navy-950/40"
@@ -97,18 +102,20 @@ export default function HeroCarousel({
         ))}
       </div>
 
-      <p className="absolute bottom-2 end-3 z-10 text-[10px] text-white/40">
-        {locale === "ar" ? "الصورة: " : "Photo: "}Ahmed /{" "}
-        <a
-          href="https://commons.wikimedia.org/wiki/File:King_Abdullah_Financial_District_20230411_114859.jpg"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline hover:text-white/70"
-        >
-          Wikimedia Commons
-        </a>{" "}
-        (CC BY-SA 4.0)
-      </p>
+      {active === 0 && (
+        <p className="absolute bottom-2 end-3 z-10 text-[10px] text-white/40">
+          {locale === "ar" ? "الصورة: " : "Photo: "}Ahmed /{" "}
+          <a
+            href="https://commons.wikimedia.org/wiki/File:King_Abdullah_Financial_District_20230411_114859.jpg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-white/70"
+          >
+            Wikimedia Commons
+          </a>{" "}
+          (CC BY-SA 4.0)
+        </p>
+      )}
     </section>
   );
 }
