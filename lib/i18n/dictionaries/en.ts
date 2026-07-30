@@ -41,6 +41,7 @@ const dictionary = {
     quickLinksHeading: "Quick Links",
     quickLinks: {
       creditRatings: "Credit Ratings",
+      publishedRatings: "Published Ratings",
       valuation: "Business Valuation",
       research: "Research",
       ratingDisclosure: "Rating Disclosure",
@@ -233,6 +234,14 @@ const dictionary = {
     },
     infoHeading: "Contact Information",
     officeHeading: "Head Office",
+  },
+  ratingsPage: {
+    heroTitle: "Published Ratings",
+    heroSubtitle: "The latest credit rating actions issued by Tasneef.",
+  },
+  faqPage: {
+    heroTitle: "FAQs",
+    heroSubtitle: "Answers to the most common questions about our rating process.",
   },
 };
 

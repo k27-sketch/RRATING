@@ -1,5 +1,14 @@
 import Link from "next/link";
-import { BarChart3, Calculator, BookOpen, Briefcase, Leaf, HelpCircle, Send } from "lucide-react";
+import {
+  BarChart3,
+  TrendingUp,
+  Calculator,
+  BookOpen,
+  Briefcase,
+  Leaf,
+  HelpCircle,
+  Send,
+} from "lucide-react";
 import type { Dictionary } from "@/lib/i18n/get-dictionary";
 
 export default function QuickLinks({
@@ -14,18 +23,19 @@ export default function QuickLinks({
 
   const items = [
     { icon: BarChart3, label: quickLinks.creditRatings, href: `${base}/methodology` },
+    { icon: TrendingUp, label: quickLinks.publishedRatings, href: `${base}/ratings` },
     { icon: Calculator, label: quickLinks.valuation, href: `${base}/methodology#valuation` },
     { icon: BookOpen, label: quickLinks.research, href: `${base}/methodology#research` },
     { icon: Briefcase, label: quickLinks.consulting, href: `${base}/methodology#consulting` },
     { icon: Leaf, label: quickLinks.esg, href: `${base}/methodology#esg` },
-    { icon: HelpCircle, label: quickLinks.faqs, href: `${base}/methodology#faq` },
+    { icon: HelpCircle, label: quickLinks.faqs, href: `${base}/faq` },
     { icon: Send, label: quickLinks.contact, href: `${base}/contact` },
   ];
 
   return (
     <section className="border-b border-navy-100 bg-white">
       <div className="mx-auto max-w-3xl px-6 py-14">
-        <div className="grid grid-cols-3 gap-x-4 gap-y-10 sm:grid-cols-4 lg:grid-cols-7">
+        <div className="grid grid-cols-4 gap-x-4 gap-y-10 sm:grid-cols-4 lg:grid-cols-8">
           {items.map(({ icon: Icon, label, href }) => (
             <Link
               key={label}

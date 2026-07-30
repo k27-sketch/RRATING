@@ -39,6 +39,7 @@ const dictionary = {
     quickLinksHeading: "روابط سريعة",
     quickLinks: {
       creditRatings: "التصنيف الائتماني",
+      publishedRatings: "التصنيفات المنشورة",
       valuation: "التقييم المالي",
       research: "الأبحاث",
       ratingDisclosure: "الإفصاح عن التصنيفات",
@@ -212,6 +213,14 @@ const dictionary = {
     },
     infoHeading: "معلومات التواصل",
     officeHeading: "المكتب الرئيسي",
+  },
+  ratingsPage: {
+    heroTitle: "التصنيفات المنشورة",
+    heroSubtitle: "أحدث قرارات التصنيف الائتماني الصادرة عن تصنيف.",
+  },
+  faqPage: {
+    heroTitle: "الأسئلة الشائعة",
+    heroSubtitle: "إجابات على أكثر الأسئلة شيوعًا حول عملية التصنيف لدينا.",
   },
 };
 

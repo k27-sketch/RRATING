@@ -85,51 +85,7 @@ export default async function MethodologyPage({
         </div>
       </section>
 
-      <section id="recent-ratings" className="scroll-mt-24 border-b border-navy-100 bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-16">
-          <h2 className="text-xl font-bold text-navy-900">{dict.reports.tableHeading}</h2>
-          <div className="mt-6 overflow-x-auto rounded-xl border border-navy-100 bg-white">
-            <table className="w-full min-w-[560px] text-start text-sm">
-              <thead className="bg-navy-50 text-navy-900">
-                <tr>
-                  <th className="px-5 py-3 text-start font-semibold">
-                    {dict.reports.tableColumns.issuer}
-                  </th>
-                  <th className="px-5 py-3 text-start font-semibold">
-                    {dict.reports.tableColumns.sector}
-                  </th>
-                  <th className="px-5 py-3 text-start font-semibold">
-                    {dict.reports.tableColumns.rating}
-                  </th>
-                  <th className="px-5 py-3 text-start font-semibold">
-                    {dict.reports.tableColumns.outlook}
-                  </th>
-                  <th className="px-5 py-3 text-start font-semibold">
-                    {dict.reports.tableColumns.date}
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {dict.reports.sampleRows.map((row, i) => (
-                  <tr
-                    key={row.issuer}
-                    className={i !== 0 ? "border-t border-navy-100" : ""}
-                  >
-                    <td className="px-5 py-3 font-medium text-navy-900">{row.issuer}</td>
-                    <td className="px-5 py-3 text-navy-800/80">{row.sector}</td>
-                    <td className="px-5 py-3 font-semibold text-navy-900">{row.rating}</td>
-                    <td className="px-5 py-3 text-navy-800/80">{row.outlook}</td>
-                    <td className="px-5 py-3 text-navy-800/80">{row.date}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className="mt-3 text-xs text-navy-800/50">{dict.reports.disclaimer}</p>
-        </div>
-      </section>
-
-      <section className="border-y border-navy-100 bg-white">
+      <section className="border-b border-navy-100 bg-white">
         <div className="mx-auto max-w-4xl px-6 py-16">
           <h2 className="text-2xl font-bold text-navy-900">{methodology.processHeading}</h2>
           <ol className="mt-8 space-y-4">
@@ -142,18 +98,6 @@ export default async function MethodologyPage({
               </li>
             ))}
           </ol>
-        </div>
-      </section>
-
-      <section id="faq" className="scroll-mt-24 mx-auto max-w-4xl px-6 py-16">
-        <h2 className="text-2xl font-bold text-navy-900">{methodology.faqHeading}</h2>
-        <div className="mt-8 space-y-6">
-          {methodology.faqs.map((f) => (
-            <div key={f.q}>
-              <h3 className="font-semibold text-navy-900">{f.q}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-navy-800/70">{f.a}</p>
-            </div>
-          ))}
         </div>
       </section>
     </>
