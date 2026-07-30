@@ -8,7 +8,7 @@ const dictionary = {
   nav: {
     home: "Home",
     about: "About Us",
-    methodology: "Ratings & Methodology",
+    methodology: "Our Services",
     reports: "Reports & Disclosure",
     contact: "Contact",
     requestRating: "Request a Rating",
@@ -119,9 +119,9 @@ const dictionary = {
     networkBody: "Riyadh, Saudi Arabia (placeholder — add branch locations).",
   },
   methodology: {
-    heroTitle: "Ratings & Methodology",
+    heroTitle: "Our Services",
     heroSubtitle:
-      "How we assess, assign, and monitor credit ratings.",
+      "Credit ratings, business valuation, research, consulting, and ESG assessment — all our services in one place.",
     overviewHeading: "Overview",
     overviewBody:
       "Our credit ratings are forward-looking opinions on the relative creditworthiness of an issuer or a specific debt instrument. Ratings are assigned by a rating committee following independent analysis and are monitored on an ongoing basis. This is placeholder methodology copy.",
